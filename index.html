@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <a href="index1.html">Сайт 1</a>
-    <a href="index2.html">Сайт 2</a>
-    <a href="index3.html">Сайт 3</a>
-    <a href="index4.html">Сайт 4</a>
-    
+    <input type=" введите число " id="num1" placeholder="первое число">
+    <input type=" введите 2 число" id="num2" placeholder="второе число"> <br>
+    <div type="text" id="result"></div>
+    <button onclick="multiply()"></button>
+
+    <script>
+        let n1 = document.getElementById('num1');
+        let n2 = document.getElementById('num2');
+        let res = document.getElementById('result');
+        function multiply (){
+            res.innerText = n1.value * n2.value
+        }
+    </script>
 </body>
 </html>
